@@ -1,0 +1,12 @@
+# Import the dataset 
+
+* note that your working directory must include the data.csv file in order to find the X and Y values from your data *
+
+dataset = pd.read_csv('data.csv')
+
+* Then declare the X and Y variables from your dataset *
+
+X = dataset.iloc[:, -1].values
+Y = dataset.iloc[:, y].values 
+
+* replace 'y' with the last column of your dataset to include all required columns of data i.e. 3 if your dataset has 3 columns *
